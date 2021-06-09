@@ -96,13 +96,22 @@ class SplitPane extends Component {
   constructor(props) {
     super(props);
 
+    const newSizeState = this.getPanePropSize(props);
+    this.sizeState = newSizeState;
+
     this.state = {
-      sizes: this.getPanePropSize(props)
+      sizes: this.sizeState
     };
   }
 
+  sizeState;
+
   componentWillReceiveProps(nextProps) {
-    this.setState({sizes: this.getPanePropSize(nextProps)});
+    const newSizeState = this.getPanePropSize(nextProps);
+    if(JSON.stringify(this.sizeState) != JSON.stringify(newSizeState)) {
+      this.setState({sizes: newSizeState});
+      this.sizeState = newSizeState;
+    }
   }
 
   componentWillUnmount() {

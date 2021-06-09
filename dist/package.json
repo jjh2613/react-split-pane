@@ -3,7 +3,7 @@
   "description": "React split-pane component V2 For TypeScript ( Forked From react-split-pane",
   "main": "index.js",
   "types": "index.d.ts",
-  "version": "2.0.2",
+  "version": "2.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/jjh2613/react-split-pane"
@@ -73,7 +73,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "release:patch": "yarn test && yarn version patch && git push && yarn publish --tag next",
-    "release": "npm run compile && npm publish dist/"
+    "release": "npm run compile && npm publish lib/"
   },
   "browserify": {
     "transform": [

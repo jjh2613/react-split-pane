@@ -9,8 +9,6 @@ This is forked from [react-split-pane](https://github.com/tomkp/react-split-pane
 2. Do Not change size if props is same when re-renders
 
 ```
-npm install react-split-pane-v2-ts
-
 yarn add react-split-pane-v2-ts
 ```
 

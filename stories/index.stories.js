@@ -4,8 +4,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import SplitPane from '../lib/SplitPane';
-import Pane from "../lib/Pane";
+import SplitPane from '../dist/lib/SplitPane';
+import Pane from "../dist/lib/Pane";
 
 import { Button, Welcome } from '@storybook/react/demo';
 
@@ -23,7 +23,13 @@ storiesOf('Vertical', module)
       <Pane>This is a Pane</Pane>
       <Pane>This is a Pane</Pane>
     </SplitPane>
-  );
+  ).add('with Multiple Panes', () =>
+    <SplitPane split="vertical">
+      <Pane>This is a Left Pane</Pane>
+      <Pane>This is a Middle Pane</Pane>
+      <Pane>This is a Right Pane</Pane>
+    </SplitPane>
+  ) ;
 
 storiesOf('Horizontal', module)
   .add('with divs', () =>
