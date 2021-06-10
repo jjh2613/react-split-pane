@@ -51,6 +51,7 @@ function PaneStyle(_ref) {
 
   style[styleProp.minSize] = (0, _SplitPane.convertSizeToCssValue)(minSize, resizersSize);
   style[styleProp.maxSize] = (0, _SplitPane.convertSizeToCssValue)(maxSize, resizersSize);
+  style.overflow = "auto";
 
   switch ((0, _SplitPane.getUnit)(value)) {
     case 'ratio':

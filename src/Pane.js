@@ -21,6 +21,7 @@ function PaneStyle({ split, initialSize, size, minSize, maxSize, resizersSize })
 
   style[styleProp.minSize] = convertSizeToCssValue(minSize, resizersSize);
   style[styleProp.maxSize] = convertSizeToCssValue(maxSize, resizersSize);
+  style.overflow = "auto"
 
   switch(getUnit(value)) {
     case 'ratio':
