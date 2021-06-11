@@ -3,7 +3,7 @@
   "description": "React split-pane component V2 For TypeScript ( Forked From react-split-pane",
   "main": "index.js",
   "types": "index.d.ts",
-  "version": "2.0.2",
+  "version": "2.1.7",
   "repository": {
     "type": "git",
     "url": "https://github.com/jjh2613/react-split-pane"

@@ -14,7 +14,7 @@ export interface Props {
   split?: "vertical" | "horizontal";
   onDragStarted?: () => void;
   onDragFinished?: () => void;
-  onChange?: (newSizes: number[]) => void;
+  onChange?: (newSizes: string[]) => void;
   onResizerClick?: (event: MouseEvent) => void;
   onResizerDoubleClick?: (event: MouseEvent) => void;
   prefixer?: Prefixer;
